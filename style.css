@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #384259;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 18px;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+nav a {
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.185);
+    
+}
+
+nav li {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10% auto; */
+    padding-top: 10%;
+    padding-bottom: 250px;
+    line-height: 60px;
+    border-bottom: 1px solid;
+    background-color: #384259;
+}
+
+.welcome-section h1 {
+    margin: 100px auto auto auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 55px;
+    color: #B4C6A6;
+}
+
+.welcome-section p {
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #B4C6A6;
+}
+
+#projects {
+    width: 100%;
+    /* background-color: #89B5AF; */
+    background-color: #ddd;
+    color: black;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.projects-section-header {
+    font-size: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    color: #384259;
+}
+
+.projects-section-sub {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-left: 24.5%;
+    font-family: 'Outfit', sans-serif;
+    color: #384259;
+}
+
+hr {
+    width: 50%;
+    margin: 8px auto;
+    padding-bottom: 10px;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    /* padding-bottom: 10%; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.project-grid {
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    background-color: #384259;
+    /* background-color: black; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px 0px;
+    /* margin-bottom: 500px; */
+}
+
+.project-grid a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.card {
+    transition: 0.7s linear;
+}
+
+.code {
+    color: #384259;
+    transition: color 0.5s ease-out;
+    /* visibility: visible; */
+  }
+  
+.card:hover .code {
+    color: #ddd;
+}
+
+.card:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: 0 70px 13px rgba(14, 13, 13, 0.452);
+}
+
+button {
+    width: 10%;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-radius: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #384259;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    color: whitesmoke;
+    display: flex;
+    margin: 0 auto;
+}
+
+span a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 28px;
+    transition: 0.5s;
+  }
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.8s;
+  }
+
+button:hover span {
+    padding-right: 30px;
+}
+
+button:hover {
+    box-shadow: 0px 10px 10px rgba(14, 13, 13, 0.452);
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.contact-section-header {
+    padding: 5%;
+    font-family: 'Outfit', sans-serif;
+    color: #384259;
+}
+
+.contact-section-header h2 {
+    font-size: 50px;
+}
+
+.contact-section-header p {
+    font-size: 18px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 50px; */
+}
+
+.contact-details {
+    margin: 10%;
+    /* padding: 5% 0; */
+}
+
+.contact-image {
+    transition: 0.1s linear;
+}
+
+.contact-image:hover {
+    box-shadow: #384259 0px 5px, #ddd 0px 10px, #ddd 0px 15px, white 0px 20px, #B4C6A6 0px 25px;
+}
+
+footer {
+    font-family: 'Arimo', sans-serif;
+    background-color: #B4C6A6;
+    padding: 2%;
+    text-align: center;
+}
+
+
+
